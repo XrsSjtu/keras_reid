@@ -244,7 +244,7 @@ ind = 0
 train_file = "/home/xurongsen/soft/keras_reid-master/weight/duke/train_file.txt"
 #best = 0.70
 with open(train_file,"w") as f:
-    while (ind<5000):
+    while (ind<30000):
         # train_img,train_label = get_triplet_data(PN)  #the data in a batch: A1 B1 C1 ...PN1 A2 B2 C2 ... PN2 G K S ... Negative(PN)
         train_img, train_label = get_triplet_hard_data(SN,
                                                        PN)  # the data in a batch : A1 A2 A3... ASN B1 B2 B3... BSN ... PN1 PN2 PN3... PNSN
